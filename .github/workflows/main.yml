@@ -1,9 +1,9 @@
-name: Hourly Proxy Sync
+name: 30-Min Proxy Sync
 
 on:
   schedule:
-    - cron: '0 * * * *' # Запускать каждый час (в 00 минут)
-  workflow_dispatch: # Позволяет запустить вручную кнопкой (для теста)
+    - cron: '*/30 * * * *' # Запуск каждые 30 минут (в 00 и 30 минут часа)
+  workflow_dispatch: # Кнопка для ручного запуска
 
 jobs:
   build:
@@ -20,47 +20,34 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run sync script (The Dozator)
+      - name: Run filter script
         run: |
           python3 -c "
           import requests, random, re
 
-          # Твои 9 баз серверов
-          urls = [
-              'https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt',
-              'https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/6.txt',
-              'https://raw.githubusercontent.com/acymz/AutoVPN/refs/heads/main/data/V2.txt',
-              'https://github.com/AvenCores/goida-vpn-configs/raw/refs/heads/main/githubmirror/25.txt',
-              'https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/26.txt',
-              'https://github.com/AvenCores/goida-vpn-configs/raw/refs/heads/main/githubmirror/24.txt',
-              'https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt',
-              'https://github.com/AvenCores/goida-vpn-configs/raw/refs/heads/main/githubmirror/10.txt',
-              'https://raw.githubusercontent.com/yitong2333/proxy-minging/refs/heads/main/v2ray.txt'
-          ]
+          # Твоя ссылка-источник
+          source_url = 'https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt'
 
-          all_proxies = []
-          for url in urls:
-              try:
-                  res = requests.get(url, timeout=10)
-                  if res.status_code == 200:
-                      # Собираем только VLESS строки
-                      lines = [line.strip() for line in res.text.split('\n') if line.strip().startswith('vless://')]
-                      all_proxies.extend(lines)
-              except: continue
-
-          # Фильтр: выкидываем российские (.ru, .su, moscow, russia) + vk, yandex, timeweb (регистронезависимо)
-          bad_words = re.compile(r'(.ru\b|.su\b|russia|moscow|vk|yandex|timeweb)', re.IGNORECASE)
-          valid_proxies = [p for p in all_proxies if not bad_words.search(p)]
-
-          # Тщательно перемешиваем общий котел
-          random.shuffle(valid_proxies)
-
-          # Берем ровно 100 случайных серверов
-          final_list = valid_proxies[:100]
-
-          # Сохраняем в файл proxies.txt
-          with open('proxies.txt', 'w', encoding='utf-8') as f:
-              f.write('\n'.join(final_list))
+          try:
+              res = requests.get(source_url, timeout=15)
+              if res.status_code == 200:
+                  # Собираем все строки vless
+                  all_proxies = [line.strip() for line in res.text.split('\n') if line.strip().startswith('vless://')]
+                  
+                  # Фильтр: убираем флаг РФ 🇷🇺, домены .ru/.su и слова russia/moscow/vk/yandex/timeweb
+                  bad_pattern = re.compile(r'(🇷🇺|ru\b|su\b|russia|moscow|vk|yandex|timeweb)', re.IGNORECASE)
+                  
+                  valid_proxies = [p for p in all_proxies if not bad_pattern.search(p)]
+                  
+                  # Тщательно перемешиваем, чтобы список всегда был разным
+                  random.shuffle(valid_proxies)
+                  
+                  # Сохраняем результат в файл proxies.txt
+                  with open('proxies.txt', 'w', encoding='utf-8') as f:
+                      f.write('\n'.join(valid_proxies))
+                  print(f'Success! Found {len(valid_proxies)} clean proxies.')
+          except Exception as e:
+              print(f'Error: {e}')
           "
 
       - name: Commit and push changes
@@ -68,5 +55,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add proxies.txt
-          git commit -m "Update proxies [skip ci]" || exit 0 # не падать, если изменений нет
+          git commit -m "Update proxies [skip ci]" || exit 0
           git push
+
