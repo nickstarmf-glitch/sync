@@ -1,9 +1,9 @@
-name: Update non-RU config
+name: Update non-RU config with AUTO switching
 
 on:
   schedule:
-    - cron: '*/40 * * * *'
-  workflow_dispatch:
+    - cron: '*/40 * * * *'   # каждые \~40 минут
+  workflow_dispatch:         # ручной запуск из Actions
 
 jobs:
   update:
@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
 
-      - name: Generate config without RU
+      - name: Generate config without RU + AUTO group
         run: |
           python - <<'EOF'
           import requests
@@ -80,6 +80,8 @@ jobs:
                   proxy["ws-opts"] = {"path": unquote(params["path"][0])}
                   if "host" in params:
                       proxy["ws-opts"].setdefault("headers", {})["Host"] = params["host"][0]
+              if net == "grpc" and "serviceName" in params:
+                  proxy["grpc-opts"] = {"grpc-service-name": params["serviceName"][0]}
               return proxy
 
           url = "https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt"
@@ -105,15 +107,33 @@ jobs:
               "log-level": "info",
               "proxies": proxies,
               "proxy-groups": [
-                  {"name": "PROXY", "type": "select", "proxies": [p["name"] for p in proxies]}
+                  {
+                      "name": "AUTO",
+                      "type": "url-test",
+                      "include-all": True,          # включает ВСЕ прокси автоматически
+                      "url": "http://www.gstatic.com/generate_204",
+                      "interval": 300,              # тест каждые 5 мин
+                      "tolerance": 50,              # переключение, если новый быстрее на 50+ мс
+                      "timeout": 3000,              # 3 сек на тест
+                      "lazy": True,
+                      "max-failed-times": 5,
+                      "disable-udp": False
+                  },
+                  {
+                      "name": "MANUAL",
+                      "type": "select",
+                      "include-all": True
+                  }
               ],
-              "rules": ["MATCH,PROXY"]
+              "rules": [
+                  "MATCH,AUTO"   # по умолчанию используем AUTO (авто-переключение)
+              ]
           }
 
           with open("non-ru-config.yaml", "w", encoding="utf-8") as f:
               yaml.dump(config, f, allow_unicode=True, sort_keys=False, indent=2, default_flow_style=False)
 
-          print("non-ru-config.yaml written")
+          print("non-ru-config.yaml written with AUTO group")
           EOF
 
       - name: Commit changes if any
@@ -121,5 +141,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add non-ru-config.yaml
-          git diff --staged --quiet || git commit -m "Auto: update non-RU config"
+          git diff --staged --quiet || git commit -m "Auto: update non-RU config + AUTO switching"
           git push
