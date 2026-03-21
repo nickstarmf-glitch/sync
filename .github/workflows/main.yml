@@ -1,107 +1,125 @@
-name: FlClash Auto-Converter
+name: Update non-RU config
 
 on:
   schedule:
     - cron: '*/40 * * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
         with:
-          python-version: '3.10'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run Filter and Internal Convert
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
         run: |
-          python3 -c "
-          import urllib.request, urllib.parse, base64, re
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
 
-          SOURCE_URL = 'https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt'
-          BAD_PATTERN = re.compile(r'(🇷🇺|ru\b|su\b|russia|moscow|vk|yandex|timeweb)', re.IGNORECASE)
+      - name: Generate config without RU
+        run: |
+          python - <<'EOF'
+          import requests
+          import yaml
+          from urllib.parse import parse_qs, unquote
+          import sys
 
-          def parse_vless(link, index):
-              try:
-                  url = urllib.parse.urlparse(link.strip())
-                  if url.scheme != 'vless': return None
-                  query = dict(urllib.parse.parse_qsl(url.query))
-                  
-                  # Очистка имени и проверка фильтров
-                  raw_name = urllib.parse.unquote(url.fragment) if url.fragment else url.hostname
-                  if BAD_PATTERN.search(raw_name) or BAD_PATTERN.search(link): return None
-                  
-                  # Формируем уникальное имя без спецсимволов YAML
-                  name = f'Node-{index}-' + re.sub(r'[^\w\s-]', '', raw_name)[:30]
-                  
-                  p = {
-                      'name': name.strip(),
-                      'server': url.hostname,
-                      'port': int(url.port),
-                      'uuid': url.username,
-                      'sni': query.get('sni', ''),
-                      'type': query.get('type', 'tcp'),
-                      'security': query.get('security', 'none'),
-                      'fp': query.get('fp', 'chrome'),
-                      'pbk': query.get('pbk', ''),
-                      'sid': query.get('sid', ''),
-                      'path': query.get('path', '/'),
-                      'host': query.get('host', ''),
-                      'flow': query.get('flow', '')
+          def parse_vless(line):
+              line = line.strip()
+              if not line.startswith('vless://') or '%F0%9F%87%B7%F0%9F%87%BA' in line:
+                  return None
+              if '#' in line:
+                  config_part, remark_part = line.split('#', 1)
+                  remark = unquote(remark_part).strip() or "NoName"
+              else:
+                  remark = "NoName"
+              url_part = config_part[8:]
+              if '@' not in url_part:
+                  return None
+              uuid, rest = url_part.split('@', 1)
+              if '?' in rest:
+                  host_port, query = rest.split('?', 1)
+                  params = parse_qs(query)
+              else:
+                  host_port = rest
+                  params = {}
+              server, port_str = host_port.rsplit(':', 1) if ':' in host_port else (host_port, '443')
+              try: port = int(port_str)
+              except: port = 443
+              proxy = {
+                  "name": remark,
+                  "type": "vless",
+                  "server": server,
+                  "port": port,
+                  "uuid": uuid,
+                  "udp": True,
+                  "skip-cert-verify": False,
+              }
+              net = params.get("type", ["tcp"])[0]
+              if net != "tcp":
+                  proxy["network"] = net
+              sec = params.get("security", ["none"])[0]
+              if sec in ("tls", "reality"):
+                  proxy["tls"] = True
+                  proxy["servername"] = params.get("sni", params.get("host", [server]))[0]
+                  if "fp" in params:
+                      proxy["client-fingerprint"] = params["fp"][0]
+              if sec == "reality" and "pbk" in params:
+                  proxy["reality-opts"] = {
+                      "public-key": params["pbk"][0],
+                      "short-id": params.get("sid", [""])[0],
                   }
-                  return p
-              except: return None
+              if net == "ws" and "path" in params:
+                  proxy["ws-opts"] = {"path": unquote(params["path"][0])}
+                  if "host" in params:
+                      proxy["ws-opts"].setdefault("headers", {})["Host"] = params["host"][0]
+              return proxy
 
+          url = "https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt"
           try:
-              req = urllib.request.Request(SOURCE_URL, headers={'User-Agent': 'Mozilla/5.0'})
-              content = urllib.request.urlopen(req).read().decode('utf-8')
-              if 'vless://' not in content:
-                  content = base64.b64decode(content).decode('utf-8')
-              
-              proxies = []
-              for i, l in enumerate(content.splitlines()):
-                  res = parse_vless(l, i)
-                  if res: proxies.append(res)
-
-              with open('flclash.yaml', 'w', encoding='utf-8') as f:
-                  f.write('proxies:\n')
-                  for p in proxies:
-                      f.write(f'  - name: \"{p[\"name\"]}\"\n')
-                      f.write(f'    type: vless\n    server: {p[\"server\"]}\n    port: {p[\"port\"]}\n')
-                      f.write(f'    uuid: {p[\"uuid\"]}\n    cipher: auto\n    udp: true\n')
-                      f.write(f'    tls: {\"true\" if p[\"security\"] in [\"tls\", \"reality\"] else \"false\"}\n')
-                      if p['sni']: f.write(f'    servername: {p[\"sni\"]}\n')
-                      if p['flow']: f.write(f'    flow: {p[\"flow\"]}\n')
-                      if p['security'] == 'reality':
-                          f.write(f'    reality-opts:\n      public-key: {p[\"pbk\"]}\n      short-id: {p[\"sid\"]}\n')
-                      if p['type'] == 'ws':
-                          f.write(f'    ws-opts:\n      path: {p[\"path\"]}\n      headers:\n        Host: {p[\"host\"] or p[\"server\"]}\n')
-                      elif p['type'] == 'grpc':
-                          f.write(f'    grpc-opts:\n      grpc-service-name: {p[\"path\"]}\n')
-                      f.write(f'    client-fingerprint: {p[\"fp\"]}\n')
-                  
-                  f.write('\nproxy-groups:\n')
-                  f.write('  - name: Auto-Select\n    type: url-test\n    url: http://www.gstatic.com/generate_204\n    interval: 300\n    proxies:\n')
-                  for p in proxies: f.write(f'      - \"{p[\"name\"]}\"\n')
-                  f.write('\nrules:\n  - MATCH,Auto-Select\n')
-                  
-              print(f'Done! Found {len(proxies)} nodes.')
+              r = requests.get(url, timeout=12)
+              r.raise_for_status()
           except Exception as e:
-              print(f'Error: {e}')
-              exit(1)
-          "
+              print(f"Download failed: {e}", file=sys.stderr)
+              sys.exit(1)
 
-      - name: Commit and push
+          proxies = [p for line in r.text.splitlines() if (p := parse_vless(line))]
+
+          print(f"Non-RU servers: {len(proxies)}", file=sys.stderr)
+
+          if not proxies:
+              print("No proxies found", file=sys.stderr)
+              sys.exit(0)
+
+          config = {
+              "mixed-port": 7890,
+              "allow-lan": True,
+              "mode": "rule",
+              "log-level": "info",
+              "proxies": proxies,
+              "proxy-groups": [
+                  {"name": "PROXY", "type": "select", "proxies": [p["name"] for p in proxies]}
+              ],
+              "rules": ["MATCH,PROXY"]
+          }
+
+          with open("non-ru-config.yaml", "w", encoding="utf-8") as f:
+              yaml.dump(config, f, allow_unicode=True, sort_keys=False, indent=2, default_flow_style=False)
+
+          print("non-ru-config.yaml written")
+          EOF
+
+      - name: Commit changes if any
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add flclash.yaml
-          git commit -m "Final independent convert [skip ci]" || exit 0
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add non-ru-config.yaml
+          git diff --staged --quiet || git commit -m "Auto: update non-RU config"
           git push
