@@ -23,94 +23,76 @@ jobs:
       - name: Run Filter and Internal Convert
         run: |
           python3 -c "
-          import urllib.request, urllib.parse, base64, re, json
+          import urllib.request, urllib.parse, base64, re
 
           SOURCE_URL = 'https://raw.githubusercontent.com/zieng2/wl/main/vless_lite.txt'
           BAD_PATTERN = re.compile(r'(🇷🇺|ru\b|su\b|russia|moscow|vk|yandex|timeweb)', re.IGNORECASE)
 
-          def parse_vless(link):
+          def parse_vless(link, index):
               try:
-                  url = urllib.parse.urlparse(link)
+                  url = urllib.parse.urlparse(link.strip())
                   if url.scheme != 'vless': return None
-                  
                   query = dict(urllib.parse.parse_qsl(url.query))
-                  name = urllib.parse.unquote(url.fragment) if url.fragment else url.hostname
                   
-                  if BAD_PATTERN.search(name): return None
-
-                  proxy = {
-                      'name': name[:50], # Обрезаем слишком длинные имена
-                      'type': 'vless',
+                  # Очистка имени и проверка фильтров
+                  raw_name = urllib.parse.unquote(url.fragment) if url.fragment else url.hostname
+                  if BAD_PATTERN.search(raw_name) or BAD_PATTERN.search(link): return None
+                  
+                  # Формируем уникальное имя без спецсимволов YAML
+                  name = f'Node-{index}-' + re.sub(r'[^\w\s-]', '', raw_name)[:30]
+                  
+                  p = {
+                      'name': name.strip(),
                       'server': url.hostname,
                       'port': int(url.port),
                       'uuid': url.username,
-                      'cipher': 'auto',
-                      'tls': query.get('security') in ['tls', 'reality'],
-                      'udp': True,
-                      'servername': query.get('sni', ''),
-                      'network': query.get('type', 'tcp')
+                      'sni': query.get('sni', ''),
+                      'type': query.get('type', 'tcp'),
+                      'security': query.get('security', 'none'),
+                      'fp': query.get('fp', 'chrome'),
+                      'pbk': query.get('pbk', ''),
+                      'sid': query.get('sid', ''),
+                      'path': query.get('path', '/'),
+                      'host': query.get('host', ''),
+                      'flow': query.get('flow', '')
                   }
-
-                  if query.get('security') == 'reality':
-                      proxy['reality-opts'] = {
-                          'public-key': query.get('pbk', ''),
-                          'short-id': query.get('sid', '')
-                      }
-                  
-                  if proxy['network'] == 'ws':
-                      proxy['ws-opts'] = {
-                          'path': query.get('path', '/'),
-                          'headers': {'Host': query.get('host', '')}
-                      }
-                  elif proxy['network'] == 'grpc':
-                      proxy['grpc-opts'] = {'grpc-service-name': query.get('serviceName', '')}
-                      
-                  proxy['client-fingerprint'] = query.get('fp', 'chrome')
-                  return proxy
+                  return p
               except: return None
 
           try:
-              content = urllib.request.urlopen(SOURCE_URL).read().decode('utf-8')
+              req = urllib.request.Request(SOURCE_URL, headers={'User-Agent': 'Mozilla/5.0'})
+              content = urllib.request.urlopen(req).read().decode('utf-8')
               if 'vless://' not in content:
                   content = base64.b64decode(content).decode('utf-8')
               
-              links = content.splitlines()
               proxies = []
-              for l in links:
-                  p = parse_vless(l.strip())
-                  if p: proxies.append(p)
-
-              # Генерируем YAML вручную, чтобы не ставить лишние библиотеки
-              config = {
-                  'proxies': proxies,
-                  'proxy-groups': [
-                      {'name': 'Auto-Select', 'type': 'url-test', 'proxies': [p['name'] for p in proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300},
-                      {'name': 'Manual-Select', 'type': 'select', 'proxies': ['Auto-Select'] + [p['name'] for p in proxies]}
-                  ],
-                  'rules': ['MATCH,Auto-Select']
-              }
+              for i, l in enumerate(content.splitlines()):
+                  res = parse_vless(l, i)
+                  if res: proxies.append(res)
 
               with open('flclash.yaml', 'w', encoding='utf-8') as f:
-                  import yaml
-                  # Если yaml нет, используем json-подобный формат, который Clash тоже ест
                   f.write('proxies:\n')
                   for p in proxies:
                       f.write(f'  - name: \"{p[\"name\"]}\"\n')
-                      for k, v in p.items():
-                          if k == 'name': continue
-                          if isinstance(v, dict):
-                              f.write(f'    {k}:\n')
-                              for subk, subv in v.items(): f.write(f'      {subk}: {subv}\n')
-                          else:
-                              f.write(f'    {k}: {v}\n')
+                      f.write(f'    type: vless\n    server: {p[\"server\"]}\n    port: {p[\"port\"]}\n')
+                      f.write(f'    uuid: {p[\"uuid\"]}\n    cipher: auto\n    udp: true\n')
+                      f.write(f'    tls: {\"true\" if p[\"security\"] in [\"tls\", \"reality\"] else \"false\"}\n')
+                      if p['sni']: f.write(f'    servername: {p[\"sni\"]}\n')
+                      if p['flow']: f.write(f'    flow: {p[\"flow\"]}\n')
+                      if p['security'] == 'reality':
+                          f.write(f'    reality-opts:\n      public-key: {p[\"pbk\"]}\n      short-id: {p[\"sid\"]}\n')
+                      if p['type'] == 'ws':
+                          f.write(f'    ws-opts:\n      path: {p[\"path\"]}\n      headers:\n        Host: {p[\"host\"] or p[\"server\"]}\n')
+                      elif p['type'] == 'grpc':
+                          f.write(f'    grpc-opts:\n      grpc-service-name: {p[\"path\"]}\n')
+                      f.write(f'    client-fingerprint: {p[\"fp\"]}\n')
+                  
                   f.write('\nproxy-groups:\n')
-                  for g in config['proxy-groups']:
-                      f.write(f'  - name: {g[\"name\"]}\n    type: {g[\"type\"]}\n    proxies:\n')
-                      for pn in g['proxies']: f.write(f'      - \"{pn}\"\n')
-                      if 'url' in g: f.write(f'    url: {g[\"url\"]}\n    interval: {g[\"interval\"]}\n')
+                  f.write('  - name: Auto-Select\n    type: url-test\n    url: http://www.gstatic.com/generate_204\n    interval: 300\n    proxies:\n')
+                  for p in proxies: f.write(f'      - \"{p[\"name\"]}\"\n')
                   f.write('\nrules:\n  - MATCH,Auto-Select\n')
                   
-              print(f'Done! {len(proxies)} proxies converted.')
+              print(f'Done! Found {len(proxies)} nodes.')
           except Exception as e:
               print(f'Error: {e}')
               exit(1)
@@ -121,5 +103,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add flclash.yaml
-          git commit -m "Internal convert [skip ci]" || exit 0
+          git commit -m "Final independent convert [skip ci]" || exit 0
           git push
