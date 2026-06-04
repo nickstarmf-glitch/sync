@@ -55,188 +55,57 @@ proxies:
   reality-opts:
     public-key: ACX4SiuP3kQfZmK6VIirXhBhgafl3CEjLZGITY2MGVg
     short-id: 7a69656e6735
-- name: '🇩🇪 Germany — #24'
-  type: vless
-  server: 51.250.47.192
-  port: 443
-  uuid: 70e933b1-723b-462d-a7ea-f6bcec014b7d
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
 - name: '🇩🇪 Germany — #25'
   type: vless
-  server: 51.250.47.192
+  server: 82.202.159.141
   port: 8443
-  uuid: 70e933b1-723b-462d-a7ea-f6bcec014b7d
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
+  servername: cdn9-33.vk-cdnvideo.com
 - name: '🇩🇪 Germany — #26'
   type: vless
-  server: 51.250.47.192
-  port: 443
-  uuid: 91ff9381-17ea-478a-ba28-3b77a390fff9
+  server: 82.202.156.12
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
+  servername: cdn9-33.vk-cdnvideo.com
 - name: '🇩🇪 Germany — #27'
   type: vless
-  server: 51.250.47.192
-  port: 8443
-  uuid: 91ff9381-17ea-478a-ba28-3b77a390fff9
+  server: 185.91.52.67
+  port: 443
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
   udp: true
   skip-cert-verify: false
+  network: grpc
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
+  servername: avatars.mds.yandex.net
+  client-fingerprint: chrome
   reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+  grpc-opts:
+    grpc-service-name: grpc-vk
 - name: '🇩🇪 Germany — #28'
   type: vless
-  server: 158.160.252.176
+  server: 185.91.52.67
   port: 443
-  uuid: e2350ba4-16aa-455e-ae8b-f65102227cf4
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
   udp: true
   skip-cert-verify: false
-  network: ws
+  network: grpc
   tls: true
-  servername: cloudflare.vhub.pro
-  ws-opts:
-    path: /sequre/ws
+  servername: avatars.mds.yandex.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+  grpc-opts:
+    grpc-service-name: grpc-vk
 - name: '🇩🇪 Germany — #29'
-  type: vless
-  server: 51.250.47.192
-  port: 8443
-  uuid: 4bfc99de-da64-4ef4-911c-1eac8eb85f45
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: dc8109baf0f607ea
-- name: '🇩🇪 Germany — #30'
-  type: vless
-  server: 51.250.47.192
-  port: 443
-  uuid: 5c2c7e32-102b-40bc-9c16-49f901c9deca
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
-- name: '🇩🇪 Germany — #31'
-  type: vless
-  server: 51.250.47.192
-  port: 8443
-  uuid: 5c2c7e32-102b-40bc-9c16-49f901c9deca
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
-- name: '🇩🇪 Germany — #32'
-  type: vless
-  server: 51.250.47.192
-  port: 443
-  uuid: 5c2c7e32-102b-40bc-9c16-49f901c9deca
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 8d3293f0066e129a
-- name: '🇩🇪 Germany — #33'
-  type: vless
-  server: 51.250.47.192
-  port: 8443
-  uuid: 9fc160c3-56b6-4a54-a2e7-d800dfb2cac0
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 5be97fb85093a3a9
-- name: '🇩🇪 Germany — #34'
-  type: vless
-  server: 51.250.47.192
-  port: 443
-  uuid: 9fc160c3-56b6-4a54-a2e7-d800dfb2cac0
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 5be97fb85093a3a9
-- name: '🇩🇪 Germany — #35'
-  type: vless
-  server: 213.171.31.0
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: cdn9-33.vk-cdnvideo.com
-  client-fingerprint: chrome
-- name: '🇩🇪 Germany — #36'
-  type: vless
-  server: 85.208.85.193
-  port: 8443
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: cdn9-33.vk-cdnvideo.com
-  client-fingerprint: chrome
-- name: '🇩🇪 Germany — #37'
-  type: vless
-  server: 185.154.193.61
-  port: 2053
-  uuid: c286e7ff-3a16-459f-8e17-59de2764cf2e
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: de.chocolatemango.live
-- name: '🇩🇪 Germany — #38'
-  type: vless
-  server: 45.153.70.144
-  port: 2053
-  uuid: c286e7ff-3a16-459f-8e17-59de2764cf2e
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: de.chocolatemango.live
-  client-fingerprint: chrome
-- name: '🇩🇪 Germany — #39'
   type: vless
   server: 158.160.252.176
   port: 443
@@ -250,89 +119,265 @@ proxies:
     path: /sequre/ws
     headers:
       Host: cloudflare.vhub.pro
+- name: '🇩🇪 Germany — #30'
+  type: vless
+  server: 82.202.159.251
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #31'
+  type: vless
+  server: 188.225.43.141
+  port: 2053
+  uuid: c286e7ff-3a16-459f-8e17-59de2764cf2e
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: de.chocolatemango.live
+- name: '🇩🇪 Germany — #32'
+  type: vless
+  server: 158.160.252.176
+  port: 443
+  uuid: e2350ba4-16aa-455e-ae8b-f65102227cf4
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: cloudflare.vhub.pro
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sequre/ws
+- name: '🇩🇪 Germany — #33'
+  type: vless
+  server: 213.171.31.0
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #34'
+  type: vless
+  server: 82.202.156.110
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #35'
+  type: vless
+  server: 85.208.85.214
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #36'
+  type: vless
+  server: 82.202.158.93
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #37'
+  type: vless
+  server: 89.232.177.114
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #38'
+  type: vless
+  server: 82.202.137.16
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #39'
+  type: vless
+  server: 82.202.158.93
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
 - name: '🇩🇪 Germany — #40'
   type: vless
-  server: 51.250.47.192
+  server: 82.202.159.141
   port: 8443
-  uuid: 1a3b92ba-4441-4007-9a68-1c0683416867
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #41'
+  type: vless
+  server: 82.202.157.187
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #42'
+  type: vless
+  server: 85.208.85.91
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #43'
+  type: vless
+  server: 82.202.159.158
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #44'
+  type: vless
+  server: 85.208.85.91
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #45'
+  type: vless
+  server: 82.202.137.16
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #46'
+  type: vless
+  server: 88.218.67.227
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+- name: '🇩🇪 Germany — #47'
+  type: vless
+  server: 85.208.86.75
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #48'
+  type: vless
+  server: 82.202.159.198
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #49'
+  type: vless
+  server: 213.171.31.0
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #50'
+  type: vless
+  server: 85.208.85.193
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #51'
+  type: vless
+  server: 45.153.70.144
+  port: 2053
+  uuid: c286e7ff-3a16-459f-8e17-59de2764cf2e
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: de.chocolatemango.live
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #52'
+  type: vless
+  server: 89.232.177.114
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: 89.232.177.114
+  client-fingerprint: chrome
+- name: '🇩🇪 Germany — #53'
+  type: vless
+  server: 89.232.177.114
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: 89.232.177.114
+- name: '🇩🇪 Germany — #54'
+  type: vless
+  server: 89.232.177.114
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn9-33.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇪🇸 Spain — #55'
+  type: vless
+  server: 213.171.30.136
+  port: 8443
+  uuid: bd91187b-aeeb-403d-8cff-5bdc5ebc04c1
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: avito.ru
+  client-fingerprint: chrome
   reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 5be97fb85093a3a9
-- name: '🇫🇮 Finland — #41'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: b68d0b4c-3a11-4a02-8aca-5d2e9a98dcda
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: zib.sempai.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: /wspath/
-- name: '🇫🇮 Finland — #42'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: 09b3b5d1-d9d8-4159-85f1-a6b82701e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: zib.sempai.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: /wspath/
-- name: '🇫🇮 Finland — #43'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: 3eddbda6-59a4-4532-a623-55a5ccc207a6
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: zib.sempai.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: /wspath/
-- name: '🇫🇮 Finland — #44'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: 857169da-5e06-48b3-9793-33f9f8c8f021
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: zib.sempai.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: /wspath/
-- name: '🇫🇮 Finland — #45'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: f147e9ff-47f4-44a2-8553-00d8ab2ecab0
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: zib.sempai.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: /wspath/
-- name: '🇫🇷 France — #46'
+    public-key: FGCQJa66btmmsTEqC-vhSUN9INHarHwKNyhLi131fAQ
+    short-id: 63992a9a07179bb2
+- name: '🇫🇷 France — #56'
   type: vless
   server: 158.160.42.6
   port: 443
-  uuid: 4e1c40a9-a9da-43fc-830e-3d7c37fce79d
+  uuid: 2aa6b746-41f3-4308-9d60-43dc52865d7a
   udp: true
   skip-cert-verify: false
   tls: true
@@ -341,11 +386,11 @@ proxies:
   reality-opts:
     public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
     short-id: ''
-- name: '🇫🇷 France — #47'
+- name: '🇫🇷 France — #57'
   type: vless
   server: 158.160.42.6
   port: 443
-  uuid: 19761a88-b14b-4462-a54b-a8a3963dd88d
+  uuid: dee83349-daaa-4e67-8b7a-12cd1006ed3c
   udp: true
   skip-cert-verify: false
   tls: true
@@ -354,11 +399,11 @@ proxies:
   reality-opts:
     public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
     short-id: ''
-- name: '🇫🇷 France — #48'
+- name: '🇫🇷 France — #58'
   type: vless
   server: 158.160.42.6
   port: 443
-  uuid: e63b92bb-848a-4ded-888d-ebf3bcbcc584
+  uuid: 4bf24f1d-bf10-444c-946d-56644f29f803
   udp: true
   skip-cert-verify: false
   tls: true
@@ -367,11 +412,11 @@ proxies:
   reality-opts:
     public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
     short-id: ''
-- name: '🇫🇷 France — #49'
+- name: '🇫🇷 France — #59'
   type: vless
   server: 158.160.42.6
   port: 443
-  uuid: fbd86b7e-7e07-4c5c-8ea7-42b51ab3e288
+  uuid: 3a1a45f4-45bc-4336-9cfd-5f078bcdaa23
   udp: true
   skip-cert-verify: false
   tls: true
@@ -380,11 +425,11 @@ proxies:
   reality-opts:
     public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
     short-id: ''
-- name: '🇫🇷 France — #50'
+- name: '🇫🇷 France — #60'
   type: vless
   server: 158.160.42.6
   port: 443
-  uuid: bd3a1726-0662-4cee-b8c0-40cf29a8bf89
+  uuid: d4855a77-4de8-4912-91ff-2832686645a4
   udp: true
   skip-cert-verify: false
   tls: true
@@ -393,11 +438,11 @@ proxies:
   reality-opts:
     public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
     short-id: ''
-- name: '🇫🇷 France — #51'
+- name: '🇫🇷 France — #61'
   type: vless
-  server: 51.250.108.162
+  server: 51.250.24.222
   port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
   udp: true
   skip-cert-verify: false
   tls: true
@@ -406,11 +451,11 @@ proxies:
   reality-opts:
     public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
     short-id: 8ec792bfd725be8a
-- name: '🇫🇷 France — #52'
+- name: '🇫🇷 France — #62'
   type: vless
-  server: 51.250.24.232
+  server: 51.250.104.246
   port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
   udp: true
   skip-cert-verify: false
   tls: true
@@ -419,11 +464,24 @@ proxies:
   reality-opts:
     public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
     short-id: 8ec792bfd725be8a
-- name: '🇫🇷 France — #53'
+- name: '🇫🇷 France — #63'
+  type: vless
+  server: 51.250.97.18
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdp.x5.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
+    short-id: 8ec792bfd725be8a
+- name: '🇫🇷 France — #64'
   type: vless
   server: 51.250.106.87
   port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
   udp: true
   skip-cert-verify: false
   tls: true
@@ -432,20 +490,20 @@ proxies:
   reality-opts:
     public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
     short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #54'
+- name: '🇫🇷 France — #65'
   type: vless
-  server: 89.208.208.92
-  port: 9443
-  uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
+  server: 51.250.102.69
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: loadtest.dev.urent.ru
-  client-fingerprint: chrome
+  servername: cdp.x5.ru
+  client-fingerprint: safari
   reality-opts:
-    public-key: aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q
-    short-id: 689def22fcb54e86
-- name: '🇬🇧 United Kingdom — #55'
+    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
+    short-id: 8ec792bfd725be8a
+- name: '🇬🇧 United Kingdom — #66'
   type: vless
   server: 89.208.208.92
   port: 7443
@@ -461,33 +519,20 @@ proxies:
     short-id: 3210e0eee6605048
   grpc-opts:
     grpc-service-name: grpc
-- name: '🇬🇧 United Kingdom — #56'
+- name: '🇬🇧 United Kingdom — #67'
   type: vless
-  server: 51.250.104.246
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
+  server: 89.208.208.92
+  port: 9443
+  uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: cdp.x5.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
-    short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #57'
-  type: vless
-  server: 62.152.58.114
-  port: 443
-  uuid: cbd9ef5b-ad47-490a-b75b-205e6ad99244
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: wl-13-1.nodes.ac
+  servername: loadtest.dev.urent.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: jAJoyWJ4nMGai3H9BOa6QMUr2Vvpgqs8VipbaO5mCVU
-    short-id: 3130197867c23edb
-- name: '🇬🇧 United Kingdom — #58'
+    public-key: aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q
+    short-id: 689def22fcb54e86
+- name: '🇬🇧 United Kingdom — #68'
   type: vless
   server: 89.208.208.92
   port: 9443
@@ -500,113 +545,27 @@ proxies:
   reality-opts:
     public-key: aVu6XB9_RKR1xLtusyQ1_YOWCs4Ofi9GEJd6oERNH2Q
     short-id: 689def22fcb54e86
-- name: '🇬🇧 United Kingdom — #59'
+- name: '🇬🇧 United Kingdom — #69'
   type: vless
-  server: 51.250.102.69
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
+  server: 89.208.208.92
+  port: 7443
+  uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
   udp: true
   skip-cert-verify: false
+  network: grpc
   tls: true
-  servername: cdp.x5.ru
-  client-fingerprint: safari
+  servername: loadtest.dev.urent.ru
+  client-fingerprint: qq
   reality-opts:
-    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
-    short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #60'
-  type: vless
-  server: 51.250.103.104
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: cdp.x5.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
-    short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #61'
-  type: vless
-  server: 51.250.24.222
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: cdp.x5.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
-    short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #62'
-  type: vless
-  server: 51.250.97.18
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: cdp.x5.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
-    short-id: 8ec792bfd725be8a
-- name: '🇬🇧 United Kingdom — #63'
-  type: vless
-  server: 185.242.19.250
-  port: 443
-  uuid: 290378e9-14c8-4856-af09-fdc3b4c77cef
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: top3259365054.mwscdn.ru
-  client-fingerprint: chrome
-- name: '🇬🇧 United Kingdom — #64'
-  type: vless
-  server: 178.154.204.55
-  port: 443
-  uuid: cbd9ef5b-ad47-490a-b75b-205e6ad99244
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: wl-4-3.nodes.ac
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ljUVISw0FlRCXDz6xRTVnmms_IfVrIFLJ5bg81MDNQY
-    short-id: 7171871f66279d10
-- name: '🇬🇧 United Kingdom — #65'
-  type: vless
-  server: 178.154.204.65
-  port: 443
-  uuid: cbd9ef5b-ad47-490a-b75b-205e6ad99244
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: wl-4-4.nodes.ac
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: FVceIo73-WJfacwis9bRlQ7wEYbQuN4N25oWQlmdwl0
-    short-id: bfb16f73e35be2da
-- name: '🇬🇧 United Kingdom — #66'
-  type: vless
-  server: 178.154.215.113
-  port: 443
-  uuid: cbd9ef5b-ad47-490a-b75b-205e6ad99244
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: wl-4-1.legendary.ac
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: E-nzKjkLlehnOE5Lub_r6tCOQcvnxVaSAETjFHESciw
-    short-id: 30e93292b543f308
-- name: '🇬🇧 United Kingdom — #67'
+    public-key: _AXs-QnufIq918tbb2pwM3MDbe7kQ6i0cIHDMLwPmGs
+    short-id: 3210e0eee6605048
+  grpc-opts:
+    grpc-service-name: grpc
+- name: '🇬🇧 United Kingdom — #70'
   type: vless
   server: 46.254.17.72
   port: 443
-  uuid: cbd9ef5b-ad47-490a-b75b-205e6ad99244
+  uuid: 659644df-7ceb-4352-95cd-004dddfabd46
   udp: true
   skip-cert-verify: false
   tls: true
@@ -615,7 +574,109 @@ proxies:
   reality-opts:
     public-key: Ce2abow3fU3pN2_mlX3uJW93sBMgTI9qNo5q7_EgFTA
     short-id: c4a70eddb745b1ea
-- name: '🇭🇺 Hungary — #68'
+- name: '🇬🇧 United Kingdom — #71'
+  type: vless
+  server: 178.154.204.65
+  port: 443
+  uuid: 659644df-7ceb-4352-95cd-004dddfabd46
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: wl-4-4.nodes.ac
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FVceIo73-WJfacwis9bRlQ7wEYbQuN4N25oWQlmdwl0
+    short-id: bfb16f73e35be2da
+- name: '🇬🇧 United Kingdom — #72'
+  type: vless
+  server: 178.154.215.113
+  port: 443
+  uuid: 659644df-7ceb-4352-95cd-004dddfabd46
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: wl-4-1.legendary.ac
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: E-nzKjkLlehnOE5Lub_r6tCOQcvnxVaSAETjFHESciw
+    short-id: 30e93292b543f308
+- name: '🇬🇧 United Kingdom — #73'
+  type: vless
+  server: 62.152.58.114
+  port: 443
+  uuid: 659644df-7ceb-4352-95cd-004dddfabd46
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: wl-13-1.nodes.ac
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jAJoyWJ4nMGai3H9BOa6QMUr2Vvpgqs8VipbaO5mCVU
+    short-id: 3130197867c23edb
+- name: '🇬🇧 United Kingdom — #74'
+  type: vless
+  server: 178.154.204.55
+  port: 443
+  uuid: 659644df-7ceb-4352-95cd-004dddfabd46
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: wl-4-3.nodes.ac
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ljUVISw0FlRCXDz6xRTVnmms_IfVrIFLJ5bg81MDNQY
+    short-id: 7171871f66279d10
+- name: '🇬🇧 United Kingdom — #75'
+  type: vless
+  server: 51.250.108.162
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdp.x5.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
+    short-id: 8ec792bfd725be8a
+- name: '🇬🇧 United Kingdom — #76'
+  type: vless
+  server: 51.250.103.104
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdp.x5.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
+    short-id: 8ec792bfd725be8a
+- name: '🇬🇧 United Kingdom — #77'
+  type: vless
+  server: 185.242.19.250
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: top3259365054.mwscdn.ru
+  client-fingerprint: chrome
+- name: '🇬🇧 United Kingdom — #78'
+  type: vless
+  server: 51.250.24.232
+  port: 443
+  uuid: 86eb9625-1fb0-4d5b-bd74-aa971d2a782d
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdp.x5.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: wgXD4k3A16WR0aL63N9Mx8xoqFigJLyQWJXi-l3MPXI
+    short-id: 8ec792bfd725be8a
+- name: '🇭🇺 Hungary — #79'
   type: vless
   server: 46.16.36.227
   port: 8443
@@ -624,7 +685,17 @@ proxies:
   skip-cert-verify: false
   tls: true
   servername: cdn7-09.vk-cdnvideo.com
-- name: '🇭🇺 Hungary — #69'
+  client-fingerprint: chrome
+- name: '🇭🇺 Hungary — #80'
+  type: vless
+  server: 46.16.36.227
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn7-09.vk-cdnvideo.com
+- name: '🇭🇺 Hungary — #81'
   type: vless
   server: 82.202.138.158
   port: 8443
@@ -634,16 +705,16 @@ proxies:
   tls: true
   servername: cdn7-09.vk-cdnvideo.com
   client-fingerprint: chrome
-- name: '🇭🇺 Hungary — #70'
+- name: '🇭🇺 Hungary — #82'
   type: vless
-  server: 85.208.85.91
+  server: 82.202.138.158
   port: 8443
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
   udp: true
   skip-cert-verify: false
   tls: true
   servername: cdn7-09.vk-cdnvideo.com
-- name: '🇭🇺 Hungary — #71'
+- name: '🇭🇺 Hungary — #83'
   type: vless
   server: 85.208.85.91
   port: 8443
@@ -653,7 +724,112 @@ proxies:
   tls: true
   servername: cdn7-09.vk-cdnvideo.com
   client-fingerprint: chrome
-- name: '🇳🇱 The Netherlands — #72'
+- name: '🇮🇳 India — #84'
+  type: vless
+  server: 82.202.157.227
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: 82.202.157.227
+  client-fingerprint: chrome
+- name: '🇮🇳 India — #85'
+  type: vless
+  server: 82.202.157.227
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: 82.202.157.227
+- name: '🇲🇩 Moldova — #86'
+  type: vless
+  server: 185.91.52.67
+  port: 5443
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇳🇱 The Netherlands — #87'
+  type: vless
+  server: 82.202.156.110
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #88'
+  type: vless
+  server: 213.171.30.187
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #89'
+  type: vless
+  server: 82.202.156.10
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #90'
+  type: vless
+  server: 82.202.156.21
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #91'
+  type: vless
+  server: 82.202.156.24
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #92'
+  type: vless
+  server: 82.202.157.145
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #93'
+  type: vless
+  server: 213.171.31.2
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn3-87.vk-cdnvideo.com
+  client-fingerprint: chrome
+- name: '🇳🇱 The Netherlands — #94'
   type: vless
   server: 158.160.103.206
   port: 443
@@ -668,49 +844,7 @@ proxies:
     path: /sequre/ws?ed=2560
     headers:
       Host: cloudflare.tyr-agentstvo.tech
-- name: '🇳🇱 The Netherlands — #73'
-  type: vless
-  server: 185.91.54.76
-  port: 443
-  uuid: d6a447a4-6be6-49b4-b097-9879ca52a47f
-  udp: true
-  skip-cert-verify: false
-  network: grpc
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: 226509f017e4c36d
-- name: '🇳🇱 The Netherlands — #74'
-  type: vless
-  server: 158.160.214.183
-  port: 443
-  uuid: e2350ba4-16aa-455e-ae8b-f65102227cf4
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: cloudflare.tyr-agentstvo.tech
-  client-fingerprint: qq
-  ws-opts:
-    path: /sequre/ws?ed=2560
-    headers:
-      Host: cloudflare.tyr-agentstvo.tech
-- name: '🇳🇱 The Netherlands — #75'
-  type: vless
-  server: 158.160.214.183
-  port: 443
-  uuid: e2350ba4-16aa-455e-ae8b-f65102227cf4
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: cloudflare.tyr-agentstvo.tech
-  client-fingerprint: qq
-  ws-opts:
-    path: /sequre/ws?ed=2560
-- name: '🇳🇱 The Netherlands — #76'
+- name: '🇳🇱 The Netherlands — #95'
   type: vless
   server: 158.160.103.206
   port: 443
@@ -723,11 +857,11 @@ proxies:
   client-fingerprint: firefox
   ws-opts:
     path: /sequre/ws?ed=2560
-- name: '🇳🇱 The Netherlands — #77'
+- name: '🇳🇱 The Netherlands — #96'
   type: vless
   server: 185.91.54.76
   port: 443
-  uuid: 842bb968-ada3-4d59-ba4a-51e39385049b
+  uuid: 48765712-17f5-46b1-929a-4705f9bb528d
   udp: true
   skip-cert-verify: false
   network: grpc
@@ -737,11 +871,11 @@ proxies:
   reality-opts:
     public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
     short-id: 226509f017e4c36d
-- name: '🇳🇱 The Netherlands — #78'
+- name: '🇳🇱 The Netherlands — #97'
   type: vless
   server: 185.91.54.76
   port: 443
-  uuid: 41e8b898-bf4e-4d11-b3d3-515fc66dfa68
+  uuid: f9f17a1c-a7cf-4c5d-b262-f5e2b84fae7a
   udp: true
   skip-cert-verify: false
   network: grpc
@@ -751,72 +885,74 @@ proxies:
   reality-opts:
     public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
     short-id: 226509f017e4c36d
-- name: '🇵🇱 Poland — #79'
+- name: '🇵🇱 Poland — #98'
   type: vless
-  server: 176.109.101.215
-  port: 8444
-  uuid: abe3cb91-cf7e-468d-8c4e-6cbf61cab495
+  server: 185.91.52.67
+  port: 4443
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
   udp: true
   skip-cert-verify: false
-  tls: true
-  servername: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇹🇷 Türkiye — #80'
-  type: vless
-  server: 176.109.101.215
-  port: 7443
-  uuid: abe3cb91-cf7e-468d-8c4e-6cbf61cab495
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇹🇷 Türkiye — #81'
-  type: vless
-  server: 176.109.101.215
-  port: 7443
-  uuid: abe3cb91-cf7e-468d-8c4e-6cbf61cab495
-  udp: true
-  skip-cert-verify: false
-  tls: true
-  servername: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇹🇷 Türkiye — #82'
-  type: vless
-  server: 176.109.101.215
-  port: 7443
-  uuid: abe3cb91-cf7e-468d-8c4e-6cbf61cab495
-  udp: true
-  skip-cert-verify: false
+  network: grpc
   tls: true
   servername: ads.x5.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇹🇷 Türkiye — #83'
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇸🇪 Sweden — #99'
   type: vless
-  server: 176.109.101.215
-  port: 7443
-  uuid: abe3cb91-cf7e-468d-8c4e-6cbf61cab495
+  server: 185.91.52.67
+  port: 5443
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇸🇪 Sweden — #100'
+  type: vless
+  server: 185.91.52.67
+  port: 443
+  uuid: a881a08a-0532-48cd-a861-c9c1db58c844
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇸🇰 Slovakia — #101'
+  type: vless
+  server: 82.202.140.29
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
   udp: true
   skip-cert-verify: false
   tls: true
-  servername: sso.passport.yandex.ru
+  servername: cdn7-39.vk-cdnvideo.com
   client-fingerprint: chrome
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇺🇸 United States — #84'
+- name: '🇸🇰 Slovakia — #102'
+  type: vless
+  server: 82.202.140.29
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: cdn7-39.vk-cdnvideo.com
+- name: '🇺🇸 United States — #103'
   type: vless
   server: 82.202.137.103
   port: 443
@@ -829,7 +965,7 @@ proxies:
   reality-opts:
     public-key: dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk
     short-id: '2404'
-- name: '🇺🇸 United States — #85'
+- name: '🇺🇸 United States — #104'
   type: vless
   server: 82.202.137.103
   port: 443
@@ -839,6 +975,19 @@ proxies:
   tls: true
   servername: google.com
   client-fingerprint: firefox
+  reality-opts:
+    public-key: dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk
+    short-id: '2404'
+- name: '🇺🇸 United States — #105'
+  type: vless
+  server: 82.202.137.103
+  port: 443
+  uuid: 9b25a73b-a67b-4efc-9462-5f14bb305ee7
+  udp: true
+  skip-cert-verify: false
+  tls: true
+  servername: google.com
+  client-fingerprint: chrome
   reality-opts:
     public-key: dl8h7j1NKxBL_p2leIy9SWKznB0VG5h8ftsb0hlLICk
     short-id: '2404'
