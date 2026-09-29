@@ -55,7 +55,7 @@ proxies:
   reality-opts:
     public-key: ACX4SiuP3kQfZmK6VIirXhBhgafl3CEjLZGITY2MGVg
     short-id: 7a69656e6735
-- name: '🇩🇪 Germany — #27'
+- name: '🇩🇪 Germany — #24'
   type: vless
   server: 37.18.14.168
   port: 10654
@@ -69,7 +69,7 @@ proxies:
   reality-opts:
     public-key: ds10ztOlMn8xfeIKEQ1m3I-tdem-abZbHKtJCU13CQM
     short-id: 5c3fb122
-- name: '🇩🇪 Germany — #28'
+- name: '🇩🇪 Germany — #25'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -80,6 +80,51 @@ proxies:
   tls: true
   servername: media-se.compressor.work
   client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: media-se.compressor.work
+- name: '🇩🇪 Germany — #26'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: edge
+  ws-opts:
+    path: /ws
+    headers:
+      Host: media-se.compressor.work
+- name: '🇩🇪 Germany — #27'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: ios
+  ws-opts:
+    path: /ws
+    headers:
+      Host: media-se.compressor.work
+- name: '🇩🇪 Germany — #28'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: safari
   ws-opts:
     path: /ws
     headers:
@@ -94,55 +139,10 @@ proxies:
   network: ws
   tls: true
   servername: media-se.compressor.work
-  client-fingerprint: edge
-  ws-opts:
-    path: /ws
-    headers:
-      Host: media-se.compressor.work
-- name: '🇩🇪 Germany — #30'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: ios
-  ws-opts:
-    path: /ws
-    headers:
-      Host: media-se.compressor.work
-- name: '🇩🇪 Germany — #31'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: safari
-  ws-opts:
-    path: /ws
-    headers:
-      Host: media-se.compressor.work
-- name: '🇩🇪 Germany — #32'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
   client-fingerprint: android
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #33'
+- name: '🇩🇪 Germany — #30'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -155,7 +155,7 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #34'
+- name: '🇩🇪 Germany — #31'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -168,7 +168,7 @@ proxies:
   client-fingerprint: edge
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #35'
+- name: '🇩🇪 Germany — #32'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -181,7 +181,7 @@ proxies:
   client-fingerprint: firefox
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #36'
+- name: '🇩🇪 Germany — #33'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -194,7 +194,7 @@ proxies:
   client-fingerprint: ios
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #37'
+- name: '🇩🇪 Germany — #34'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -207,7 +207,7 @@ proxies:
   client-fingerprint: qq
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #38'
+- name: '🇩🇪 Germany — #35'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -220,7 +220,7 @@ proxies:
   client-fingerprint: safari
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #39'
+- name: '🇩🇪 Germany — #36'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -231,6 +231,51 @@ proxies:
   tls: true
   servername: media-se.compressor.work
   client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 95.163.232.171
+- name: '🇩🇪 Germany — #37'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: edge
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 95.163.232.171
+- name: '🇩🇪 Germany — #38'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: firefox
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 95.163.232.171
+- name: '🇩🇪 Germany — #39'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: qq
   ws-opts:
     path: /ws
     headers:
@@ -245,7 +290,7 @@ proxies:
   network: ws
   tls: true
   servername: media-se.compressor.work
-  client-fingerprint: edge
+  client-fingerprint: safari
   ws-opts:
     path: /ws
     headers:
@@ -260,12 +305,36 @@ proxies:
   network: ws
   tls: true
   servername: media-se.compressor.work
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+- name: '🇩🇪 Germany — #42'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: edge
+  ws-opts:
+    path: /ws
+- name: '🇩🇪 Germany — #43'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
   client-fingerprint: firefox
   ws-opts:
     path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: '🇩🇪 Germany — #42'
+- name: '🇩🇪 Germany — #44'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -278,36 +347,6 @@ proxies:
   client-fingerprint: qq
   ws-opts:
     path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: '🇩🇪 Germany — #43'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: safari
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: '🇩🇪 Germany — #44'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
 - name: '🇩🇪 Germany — #45'
   type: vless
   server: 95.163.232.171
@@ -318,7 +357,7 @@ proxies:
   network: ws
   tls: true
   servername: media-se.compressor.work
-  client-fingerprint: edge
+  client-fingerprint: safari
   ws-opts:
     path: /ws
 - name: '🇩🇪 Germany — #46'
@@ -334,6 +373,8 @@ proxies:
   client-fingerprint: firefox
   ws-opts:
     path: /ws
+    headers:
+      Host: 95.163.232.171
 - name: '🇩🇪 Germany — #47'
   type: vless
   server: 95.163.232.171
@@ -347,50 +388,9 @@ proxies:
   client-fingerprint: qq
   ws-opts:
     path: /ws
+    headers:
+      Host: 95.163.232.171
 - name: '🇩🇪 Germany — #48'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: safari
-  ws-opts:
-    path: /ws
-- name: '🇩🇪 Germany — #49'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: firefox
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: '🇩🇪 Germany — #50'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: qq
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: '🇩🇪 Germany — #51'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -405,7 +405,7 @@ proxies:
     path: /ws
     headers:
       Host: media-se.compressor.work
-- name: '🇩🇪 Germany — #52'
+- name: '🇩🇪 Germany — #49'
   type: vless
   server: 95.163.232.171
   port: 14443
@@ -420,6 +420,49 @@ proxies:
     path: /ws
     headers:
       Host: 95.163.232.171
+- name: '🇩🇪 Germany — #50'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: random
+  ws-opts:
+    path: /ws
+- name: '🇩🇪 Germany — #51'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: random
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 95.163.232.171
+- name: '🇩🇪 Germany — #52'
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: media-se.compressor.work
+  client-fingerprint: random
+  ws-opts:
+    path: /ws
+    headers:
+      Host: media-se.compressor.work
 - name: '🇩🇪 Germany — #53'
   type: vless
   server: 95.163.232.171
@@ -447,7 +490,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: 95.163.232.171
+      Host: '['''']'
 - name: '🇩🇪 Germany — #55'
   type: vless
   server: 95.163.232.171
@@ -476,66 +519,9 @@ proxies:
   client-fingerprint: random
   ws-opts:
     path: /ws
-- name: '🇩🇪 Germany — #57'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: random
-  ws-opts:
-    path: /ws
-    headers:
-      Host: '['''']'
-- name: '🇩🇪 Germany — #58'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: random
-  ws-opts:
-    path: /ws
-    headers:
-      Host: media-se.compressor.work
-- name: '🇩🇪 Germany — #59'
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: media-se.compressor.work
-  client-fingerprint: random
-  ws-opts:
-    path: /ws
     headers:
       Host: 95.163.232.171
-- name: '🇩🇪 Germany — #60'
-  type: vless
-  server: 78.159.247.188
-  port: 10010
-  uuid: 6a3c68b1-d4b8-4dff-975f-a01da4184225
-  udp: true
-  skip-cert-verify: false
-  network: raw
-  tls: true
-  servername: eh.vk.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0_FWbcTe6tvBuSZ7_7PrMaNmg44a8VxYRXPKjZuERwQ
-    short-id: a150dff4
-- name: '🇫🇷 France — #61'
+- name: '🇫🇷 France — #57'
   type: vless
   server: 176.123.162.100
   port: 9880
@@ -551,21 +537,135 @@ proxies:
     short-id: ''
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇬🇧 United Kingdom — #62'
+- name: '🇫🇷 France — #58'
   type: vless
-  server: 84.38.181.249
+  server: 91.240.87.237
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: 1b201db0-b373-455a-8ccd-fd624aaef8d3
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: raw
   tls: true
-  servername: open.spotify.com
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #59'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: 1b201db0-b373-455a-8ccd-fd624aaef8d3
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #60'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: 1b201db0-b373-455a-8ccd-fd624aaef8d3
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #61'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: 1b201db0-b373-455a-8ccd-fd624aaef8d3
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #62'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: 1b201db0-b373-455a-8ccd-fd624aaef8d3
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
   client-fingerprint: safari
   reality-opts:
-    public-key: pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w
-    short-id: 6bc02f1c474260c3
-- name: '🇷🇸 Serbia — #63'
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #63'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: e0a8c12c-6fe9-42a3-990e-abe2ea6e5605
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇫🇷 France — #64'
+  type: vless
+  server: 91.240.87.237
+  port: 443
+  uuid: e0a8c12c-6fe9-42a3-990e-abe2ea6e5605
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: fiae3.maxtelemost.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: J0SK1ic3YJvP1gac5m3KSVaUuK_bxFtqz0fh0uEdEw4
+    short-id: '00000000'
+- name: '🇵🇱 Poland — #65'
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: ''
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇵🇱 Poland — #66'
+  type: vless
+  server: 188.225.79.44
+  port: 443
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+- name: '🇷🇸 Serbia — #67'
   type: vless
   server: 213.171.25.29
   port: 9889
@@ -581,7 +681,7 @@ proxies:
     short-id: aabb
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇸🇪 Sweden — #64'
+- name: '🇸🇪 Sweden — #68'
   type: vless
   server: 176.108.246.58
   port: 9881
@@ -597,21 +697,7 @@ proxies:
     short-id: ''
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇸🇪 Sweden — #65'
-  type: vless
-  server: 45.8.228.167
-  port: 443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: bl3fk52.sysopnova.art
-  client-fingerprint: edge
-  reality-opts:
-    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
-    short-id: 5eca
-- name: '🇸🇪 Sweden — #66'
+- name: '🇸🇪 Sweden — #69'
   type: vless
   server: 176.108.246.110
   port: 9830
@@ -627,35 +713,7 @@ proxies:
     short-id: ''
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇸🇪 Sweden — #67'
-  type: vless
-  server: 45.8.228.167
-  port: 443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: bl3fk52.sysopnova.art
-  client-fingerprint: safari
-  reality-opts:
-    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
-    short-id: 5eca
-- name: '🇸🇪 Sweden — #68'
-  type: vless
-  server: 45.8.228.167
-  port: 443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: dailycanvas.sysopnova.art
-  client-fingerprint: ios
-  reality-opts:
-    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
-    short-id: 5eca
-- name: '🇺🇸 United States — #69'
+- name: '🇺🇸 United States — #70'
   type: vless
   server: 176.108.246.73
   port: 9873
