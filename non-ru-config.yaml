@@ -55,7 +55,7 @@ proxies:
   reality-opts:
     public-key: ACX4SiuP3kQfZmK6VIirXhBhgafl3CEjLZGITY2MGVg
     short-id: 7a69656e6735
-- name: '🇧🇬 Bulgaria — #64'
+- name: '🇧🇬 Bulgaria — #61'
   type: vless
   server: 78.159.246.85
   port: 8443
@@ -65,29 +65,7 @@ proxies:
   network: xhttp
   tls: true
   servername: fitindoor.net
-- name: '🇧🇬 Bulgaria — #65'
-  type: vless
-  server: 78.159.246.85
-  port: 8443
-  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: fitindoor.net
-  client-fingerprint: firefox
-- name: '🇧🇬 Bulgaria — #66'
-  type: vless
-  server: 78.159.246.85
-  port: 8443
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: fitindoor.net
-  client-fingerprint: firefox
-- name: '🇧🇬 Bulgaria — #67'
+- name: '🇧🇬 Bulgaria — #62'
   type: vless
   server: 78.159.246.85
   port: 8443
@@ -98,18 +76,29 @@ proxies:
   tls: true
   servername: fitindoor.net
   client-fingerprint: chrome
-- name: '🇧🇬 Bulgaria — #68'
+- name: '🇧🇬 Bulgaria — #63'
   type: vless
-  server: 81.94.148.232
+  server: 78.159.246.85
+  port: 8443
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: fitindoor.net
+  client-fingerprint: firefox
+- name: '🇧🇬 Bulgaria — #64'
+  type: vless
+  server: 78.159.246.85
   port: 8443
   uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
   udp: true
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: windytrout.net
+  servername: fitindoor.net
   client-fingerprint: firefox
-- name: '🇧🇬 Bulgaria — #69'
+- name: '🇧🇬 Bulgaria — #65'
   type: vless
   server: 78.159.246.85
   port: 8443
@@ -120,51 +109,83 @@ proxies:
   tls: true
   servername: fitindoor.net
   client-fingerprint: random
-- name: '🇩🇪 Germany — #70'
+- name: '🇧🇬 Bulgaria — #66'
   type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  server: 78.159.246.85
+  port: 8443
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
   udp: true
   skip-cert-verify: false
-  network: ws
+  network: xhttp
   tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #71'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #72'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: fitindoor.net
   client-fingerprint: chrome
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇧🇬 Bulgaria — #67'
+  type: vless
+  server: 81.94.148.232
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: windytrout.net
+  client-fingerprint: firefox
+- name: '🇧🇬 Bulgaria — #68'
+  type: vless
+  server: 78.159.246.85
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: fitindoor.net
+  client-fingerprint: chrome
+- name: '🇧🇬 Bulgaria — #69'
+  type: vless
+  server: 78.159.246.85
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: fitindoor.net
+  client-fingerprint: firefox
+- name: '🇧🇬 Bulgaria — #70'
+  type: vless
+  server: 81.94.148.232
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: windytrout.net
+  client-fingerprint: chrome
+- name: '🇧🇬 Bulgaria — #71'
+  type: vless
+  server: 81.94.148.232
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: windytrout.net
+  client-fingerprint: chrome
+- name: '🇧🇬 Bulgaria — #72'
+  type: vless
+  server: 81.94.148.232
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: windytrout.net
+  client-fingerprint: firefox
 - name: '🇩🇪 Germany — #73'
   type: vless
   server: 217.19.122.156
@@ -175,7 +196,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
+  client-fingerprint: safari
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -199,7 +220,7 @@ proxies:
   type: vless
   server: 217.19.122.156
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   skip-cert-verify: false
   network: ws
@@ -214,13 +235,13 @@ proxies:
   type: vless
   server: 217.19.122.156
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   skip-cert-verify: false
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -229,13 +250,13 @@ proxies:
   type: vless
   server: 217.19.122.156
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   skip-cert-verify: false
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
+  client-fingerprint: firefox
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -250,7 +271,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -259,7 +280,7 @@ proxies:
   type: vless
   server: 217.19.122.156
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
   udp: true
   skip-cert-verify: false
   network: ws
@@ -274,7 +295,7 @@ proxies:
   type: vless
   server: 217.19.122.156
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
   udp: true
   skip-cert-verify: false
   network: ws
@@ -286,6 +307,51 @@ proxies:
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #81'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: firefox
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #82'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: ios
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #83'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: safari
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #84'
   type: vless
   server: 45.11.27.133
   port: 443
@@ -301,7 +367,7 @@ proxies:
     short-id: 1e853ef7fcad4788
   grpc-opts:
     grpc-service-name: UpdateService
-- name: '🇩🇪 Germany — #82'
+- name: '🇩🇪 Germany — #85'
   type: vless
   server: 82.202.179.110
   port: 14443
@@ -315,7 +381,7 @@ proxies:
   reality-opts:
     public-key: JufPPJ3rmM2jvI9g98K87wgUHroz4C-30NHX21UoZns
     short-id: d29cbe24661f
-- name: '🇫🇷 France — #83'
+- name: '🇫🇷 France — #86'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -326,7 +392,51 @@ proxies:
   tls: true
   servername: smart.werfad.online
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #84'
+- name: '🇫🇷 France — #87'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: smart.werfad.online
+  client-fingerprint: edge
+- name: '🇫🇷 France — #88'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: smart.werfad.online
+  client-fingerprint: ios
+- name: '🇫🇷 France — #89'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: smart.werfad.online
+  client-fingerprint: qq
+- name: '🇫🇷 France — #90'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: smart.werfad.online
+  client-fingerprint: safari
+- name: '🇵🇱 Poland — #91'
   type: vless
   server: 217.19.122.194
   port: 443
