@@ -55,7 +55,7 @@ proxies:
   reality-opts:
     public-key: ACX4SiuP3kQfZmK6VIirXhBhgafl3CEjLZGITY2MGVg
     short-id: 7a69656e6735
-- name: '🇨🇿 Czechia — #6'
+- name: '🇨🇿 Czechia — #7'
   type: vless
   server: 188.72.103.4
   port: 443
@@ -66,21 +66,6 @@ proxies:
   tls: true
   servername: czech.nnight.cfd
   client-fingerprint: firefox
-- name: '🇩🇪 Germany — #7'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #8'
   type: vless
   server: 217.19.122.156
@@ -91,7 +76,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
+  client-fingerprint: safari
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -106,7 +91,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -121,7 +106,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -136,7 +121,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -151,7 +136,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
+  client-fingerprint: firefox
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -166,22 +151,26 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  client-fingerprint: ios
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #14'
   type: vless
-  server: 188.72.103.4
+  server: 217.19.122.156
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: ws
   tls: true
-  servername: swit.nnight.sbs
-  client-fingerprint: firefox
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: safari
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #15'
   type: vless
   server: 217.19.122.156
@@ -192,12 +181,38 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: random
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #16'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: swit.nnight.sbs
+  client-fingerprint: firefox
+- name: '🇩🇪 Germany — #17'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: ios
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #18'
   type: vless
   server: 217.19.122.156
   port: 443
@@ -212,31 +227,6 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #17'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-- name: '🇩🇪 Germany — #18'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
-  ws-opts:
-    path: /useraction/events/b892639b7195/
 - name: '🇩🇪 Germany — #19'
   type: vless
   server: 217.19.122.156
@@ -247,44 +237,46 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+- name: '🇩🇪 Germany — #20'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
   client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇵🇱 Poland — #20'
+- name: '🇪🇪 Estonia — #21'
   type: vless
-  server: 185.178.208.140
+  server: 188.72.103.4
   port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  uuid: 000187a2-924b-8be4-b475-485a4699c80d
   udp: true
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
+  servername: ee-cdn.fius.dev
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #21'
+- name: '🇳🇱 The Netherlands — #22'
   type: vless
-  server: 185.178.208.140
+  server: 158.160.162.185
   port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: raw
   tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: firefox
-- name: '🇵🇱 Poland — #22'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  servername: api-maps.yandex.ru
+  client-fingerprint: ios
+  reality-opts:
+    public-key: xLN7q9XBRYSrIAc10TyEGupgDbCqSuZRQILMw5nqrns
+    short-id: ''
 - name: '🇵🇱 Poland — #23'
   type: vless
   server: 185.178.208.140
@@ -295,7 +287,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: '🇵🇱 Poland — #24'
   type: vless
   server: 185.178.208.140
@@ -328,7 +320,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: '🇵🇱 Poland — #27'
   type: vless
   server: 185.178.208.140
@@ -339,7 +331,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: '🇵🇱 Poland — #28'
   type: vless
   server: 185.178.208.140
@@ -350,7 +342,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: '🇵🇱 Poland — #29'
   type: vless
   server: 185.178.208.140
@@ -372,7 +364,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: '🇵🇱 Poland — #31'
   type: vless
   server: 185.178.208.140
@@ -383,7 +375,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: ios
+  client-fingerprint: edge
 - name: '🇵🇱 Poland — #32'
   type: vless
   server: 185.178.208.140
@@ -394,7 +386,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: '🇵🇱 Poland — #33'
   type: vless
   server: 185.178.208.140
@@ -405,6 +397,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
+  client-fingerprint: edge
 - name: '🇵🇱 Poland — #34'
   type: vless
   server: 185.178.208.140
@@ -415,7 +408,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  client-fingerprint: ios
 - name: '🇵🇱 Poland — #35'
   type: vless
   server: 185.178.208.140
@@ -426,7 +419,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: safari
 - name: '🇵🇱 Poland — #36'
   type: vless
   server: 185.178.208.140
@@ -437,7 +430,6 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: firefox
 - name: '🇵🇱 Poland — #37'
   type: vless
   server: 185.178.208.140
@@ -448,7 +440,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: '🇵🇱 Poland — #38'
   type: vless
   server: 185.178.208.140
@@ -470,18 +462,18 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
 - name: '🇵🇱 Poland — #40'
   type: vless
-  server: 188.72.103.4
+  server: 185.178.208.140
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
   udp: true
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: poland.nnight.cfd
-  client-fingerprint: firefox
+  servername: static.bakarova-top.ru
+  client-fingerprint: chrome
 - name: '🇵🇱 Poland — #41'
   type: vless
   server: 185.178.208.140
@@ -503,8 +495,52 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
+  client-fingerprint: safari
+- name: '🇵🇱 Poland — #43'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: poland.nnight.cfd
+  client-fingerprint: firefox
+- name: '🇵🇱 Poland — #44'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: edge
+- name: '🇵🇱 Poland — #45'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
   client-fingerprint: qq
-- name: '🇸🇪 Sweden — #43'
+- name: '🇵🇱 Poland — #46'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: chrome
+- name: '🇸🇪 Sweden — #47'
   type: vless
   server: 188.225.77.254
   port: 8443
@@ -520,7 +556,7 @@ proxies:
     short-id: 4951a2313524dd8f
   grpc-opts:
     grpc-service-name: ozone
-- name: '🇸🇪 Sweden — #44'
+- name: '🇸🇪 Sweden — #48'
   type: vless
   server: 188.225.77.254
   port: 8443
@@ -536,7 +572,7 @@ proxies:
     short-id: 4951a2313524dd8f
   grpc-opts:
     grpc-service-name: ozone
-- name: '🇸🇪 Sweden — #45'
+- name: '🇸🇪 Sweden — #49'
   type: vless
   server: 188.225.77.254
   port: 8443
@@ -552,17 +588,20 @@ proxies:
     short-id: 4951a2313524dd8f
   grpc-opts:
     grpc-service-name: ozone
-- name: '🇺🇸 United States — #46'
+- name: '🇺🇸 United States — #50'
   type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 000187a2-924b-8be4-b475-485a4699c80d
+  server: 37.18.14.190
+  port: 7445
+  uuid: 66217279-de40-4b62-b2bb-9c33b8fb7a01
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: raw
   tls: true
-  servername: ch-cdn.fius.dev
-  client-fingerprint: firefox
+  servername: passport.yandex.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
+    short-id: 283f4b51fbe39ad9
 proxy-groups:
 - name: AUTO
   type: url-test
