@@ -55,7 +55,54 @@ proxies:
   reality-opts:
     public-key: ACX4SiuP3kQfZmK6VIirXhBhgafl3CEjLZGITY2MGVg
     short-id: 7a69656e6735
-- name: '🇨🇿 Czechia — #7'
+- name: '🇧🇬 Bulgaria — #10'
+  type: vless
+  server: 37.18.14.43
+  port: 8443
+  uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: flatcrest.net
+  client-fingerprint: safari
+- name: '🇧🇬 Bulgaria — #11'
+  type: vless
+  server: 37.18.14.43
+  port: 8443
+  uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: flatcrest.net
+  client-fingerprint: ios
+- name: '🇧🇬 Bulgaria — #12'
+  type: vless
+  server: 37.18.14.43
+  port: 8443
+  uuid: 7dd69047-047e-422e-a2ba-ed773c34fd1a
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: flatcrest.net
+  client-fingerprint: edge
+- name: '🇨🇭 Switzerland — #13'
+  type: vless
+  server: 188.225.42.52
+  port: 443
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: spb1.uni-plan.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: _AJrIKDPHT1h1TT4vGouVI_-GKYby138cWf29erKmX0
+    short-id: 20a048ac5dcb34bd
+- name: '🇨🇿 Czechia — #14'
   type: vless
   server: 188.72.103.4
   port: 443
@@ -66,111 +113,6 @@ proxies:
   tls: true
   servername: czech.nnight.cfd
   client-fingerprint: firefox
-- name: '🇩🇪 Germany — #8'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #9'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #10'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #11'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #12'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #13'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #14'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #15'
   type: vless
   server: 217.19.122.156
@@ -181,22 +123,26 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  client-fingerprint: safari
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #16'
   type: vless
-  server: 188.72.103.4
+  server: 217.19.122.156
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: ws
   tls: true
-  servername: swit.nnight.sbs
-  client-fingerprint: firefox
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: chrome
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #17'
   type: vless
   server: 217.19.122.156
@@ -207,7 +153,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -222,7 +168,7 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  client-fingerprint: firefox
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -237,9 +183,110 @@ proxies:
   network: ws
   tls: true
   servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: ios
   ws-opts:
     path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #20'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: safari
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #21'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: swit.nnight.sbs
+  client-fingerprint: firefox
+- name: '🇩🇪 Germany — #22'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: firefox
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #23'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: random
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #24'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: ios
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #25'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: random
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #26'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+- name: '🇩🇪 Germany — #27'
   type: vless
   server: 217.19.122.156
   port: 443
@@ -252,32 +299,321 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
-- name: '🇪🇪 Estonia — #21'
+- name: '🇩🇪 Germany — #28'
   type: vless
-  server: 188.72.103.4
+  server: 82.202.178.145
   port: 443
-  uuid: 000187a2-924b-8be4-b475-485a4699c80d
+  uuid: 8822fe1c-7a83-49c0-af96-c2027cb6ddd5
   udp: true
   skip-cert-verify: false
-  network: xhttp
+  network: grpc
   tls: true
-  servername: ee-cdn.fius.dev
+  servername: h12.smart-life.agency
   client-fingerprint: firefox
-- name: '🇳🇱 The Netherlands — #22'
-  type: vless
-  server: 158.160.162.185
-  port: 443
-  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
-  udp: true
-  skip-cert-verify: false
-  network: raw
-  tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: ios
   reality-opts:
-    public-key: xLN7q9XBRYSrIAc10TyEGupgDbCqSuZRQILMw5nqrns
-    short-id: ''
-- name: '🇵🇱 Poland — #23'
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇩🇪 Germany — #29'
+  type: vless
+  server: 82.202.178.145
+  port: 443
+  uuid: 3eb47299-50cd-46ee-9511-49115c56ed37
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h12.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇩🇪 Germany — #30'
+  type: vless
+  server: 82.202.178.145
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h12.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇪🇪 Estonia — #31'
+  type: vless
+  server: 188.225.83.133
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: xnodtwx.artemida.live
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8
+- name: '🇫🇷 France — #32'
+  type: vless
+  server: 188.225.46.199
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: xtw3x.artemida.digital
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8
+- name: '🇫🇷 France — #33'
+  type: vless
+  server: 188.225.75.96
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: xnodtw2x.artemida.live
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8
+- name: '🇫🇷 France — #34'
+  type: vless
+  server: 82.202.178.142
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h9.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #35'
+  type: vless
+  server: 82.202.178.141
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h8.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #36'
+  type: vless
+  server: 82.202.178.141
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h8.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #37'
+  type: vless
+  server: 82.202.178.142
+  port: 443
+  uuid: 8822fe1c-7a83-49c0-af96-c2027cb6ddd5
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h9.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #38'
+  type: vless
+  server: 82.202.178.140
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h7.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #39'
+  type: vless
+  server: 82.202.178.140
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h7.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #40'
+  type: vless
+  server: 82.202.178.139
+  port: 443
+  uuid: 3eb47299-50cd-46ee-9511-49115c56ed37
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h6.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #41'
+  type: vless
+  server: 82.202.178.140
+  port: 443
+  uuid: 3eb47299-50cd-46ee-9511-49115c56ed37
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h7.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #42'
+  type: vless
+  server: 82.202.178.139
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h6.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #43'
+  type: vless
+  server: 82.202.178.138
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h5.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #44'
+  type: vless
+  server: 82.202.178.138
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h5.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇫🇷 France — #45'
+  type: vless
+  server: 82.202.178.139
+  port: 443
+  uuid: 928a3079-7c20-40cc-9c92-e878ba959dcd
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h6.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w_hrubefrDzoh5rEB3jFTx4j-t7o1HMyyo1bAE1a8D0
+    short-id: 316d0a3751f3122d
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇬🇧 United Kingdom — #46'
+  type: vless
+  server: 82.202.183.9
+  port: 443
+  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h4.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇬🇧 United Kingdom — #47'
+  type: vless
+  server: 82.202.183.9
+  port: 443
+  uuid: 8822fe1c-7a83-49c0-af96-c2027cb6ddd5
+  udp: true
+  skip-cert-verify: false
+  network: grpc
+  tls: true
+  servername: h4.smart-life.agency
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw
+    short-id: 70c20a2f5a7d542e
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇵🇱 Poland — #48'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -288,7 +624,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #24'
+- name: '🇵🇱 Poland — #49'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -299,7 +635,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #25'
+- name: '🇵🇱 Poland — #50'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -310,7 +646,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: qq
-- name: '🇵🇱 Poland — #26'
+- name: '🇵🇱 Poland — #51'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -321,7 +657,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: ios
-- name: '🇵🇱 Poland — #27'
+- name: '🇵🇱 Poland — #52'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -332,7 +668,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #28'
+- name: '🇵🇱 Poland — #53'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -343,7 +679,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: qq
-- name: '🇵🇱 Poland — #29'
+- name: '🇵🇱 Poland — #54'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -354,7 +690,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: chrome
-- name: '🇵🇱 Poland — #30'
+- name: '🇵🇱 Poland — #55'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -365,7 +701,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: chrome
-- name: '🇵🇱 Poland — #31'
+- name: '🇵🇱 Poland — #56'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -376,7 +712,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: edge
-- name: '🇵🇱 Poland — #32'
+- name: '🇵🇱 Poland — #57'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -387,7 +723,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: chrome
-- name: '🇵🇱 Poland — #33'
+- name: '🇵🇱 Poland — #58'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -398,7 +734,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: edge
-- name: '🇵🇱 Poland — #34'
+- name: '🇵🇱 Poland — #59'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -409,7 +745,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: ios
-- name: '🇵🇱 Poland — #35'
+- name: '🇵🇱 Poland — #60'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -420,7 +756,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: safari
-- name: '🇵🇱 Poland — #36'
+- name: '🇵🇱 Poland — #61'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -430,7 +766,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-- name: '🇵🇱 Poland — #37'
+- name: '🇵🇱 Poland — #62'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -441,7 +777,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: qq
-- name: '🇵🇱 Poland — #38'
+- name: '🇵🇱 Poland — #63'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -452,7 +788,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: edge
-- name: '🇵🇱 Poland — #39'
+- name: '🇵🇱 Poland — #64'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -463,7 +799,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #40'
+- name: '🇵🇱 Poland — #65'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -474,7 +810,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: chrome
-- name: '🇵🇱 Poland — #41'
+- name: '🇵🇱 Poland — #66'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -485,7 +821,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: edge
-- name: '🇵🇱 Poland — #42'
+- name: '🇵🇱 Poland — #67'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -496,7 +832,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: safari
-- name: '🇵🇱 Poland — #43'
+- name: '🇵🇱 Poland — #68'
   type: vless
   server: 188.72.103.4
   port: 443
@@ -507,7 +843,7 @@ proxies:
   tls: true
   servername: poland.nnight.cfd
   client-fingerprint: firefox
-- name: '🇵🇱 Poland — #44'
+- name: '🇵🇱 Poland — #69'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -518,7 +854,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: edge
-- name: '🇵🇱 Poland — #45'
+- name: '🇵🇱 Poland — #70'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -529,7 +865,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: qq
-- name: '🇵🇱 Poland — #46'
+- name: '🇵🇱 Poland — #71'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -540,68 +876,6 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: chrome
-- name: '🇸🇪 Sweden — #47'
-  type: vless
-  server: 188.225.77.254
-  port: 8443
-  uuid: d1f0c6cb-0d8b-4f13-8104-b7c8e8c57110
-  udp: true
-  skip-cert-verify: false
-  network: grpc
-  tls: true
-  servername: io.ozone.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s
-    short-id: 4951a2313524dd8f
-  grpc-opts:
-    grpc-service-name: ozone
-- name: '🇸🇪 Sweden — #48'
-  type: vless
-  server: 188.225.77.254
-  port: 8443
-  uuid: d1f0c6cb-0d8b-4f13-8104-b7c8e8c57110
-  udp: true
-  skip-cert-verify: false
-  network: grpc
-  tls: true
-  servername: io.ozone.ru
-  client-fingerprint: ios
-  reality-opts:
-    public-key: rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s
-    short-id: 4951a2313524dd8f
-  grpc-opts:
-    grpc-service-name: ozone
-- name: '🇸🇪 Sweden — #49'
-  type: vless
-  server: 188.225.77.254
-  port: 8443
-  uuid: d1f0c6cb-0d8b-4f13-8104-b7c8e8c57110
-  udp: true
-  skip-cert-verify: false
-  network: grpc
-  tls: true
-  servername: io.ozone.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: rJ-fFNYXh7WW9LuYe1N71fh7nAEe5i09Pi5ZDSDlH1s
-    short-id: 4951a2313524dd8f
-  grpc-opts:
-    grpc-service-name: ozone
-- name: '🇺🇸 United States — #50'
-  type: vless
-  server: 37.18.14.190
-  port: 7445
-  uuid: 66217279-de40-4b62-b2bb-9c33b8fb7a01
-  udp: true
-  skip-cert-verify: false
-  network: raw
-  tls: true
-  servername: passport.yandex.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
-    short-id: 283f4b51fbe39ad9
 proxy-groups:
 - name: AUTO
   type: url-test
