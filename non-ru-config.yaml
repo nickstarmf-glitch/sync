@@ -59,7 +59,7 @@ proxies:
   type: vless
   server: 87.242.127.51
   port: 7452
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
   udp: true
   skip-cert-verify: false
   network: raw
@@ -71,36 +71,9 @@ proxies:
     short-id: 190c27ae5f2e4d2c
 - name: '🇩🇪 Germany — #2'
   type: vless
-  server: 95.129.236.149
-  port: 443
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
-  udp: true
-  skip-cert-verify: false
-  network: ws
-  tls: true
-  servername: d.nehtar.ru
-  client-fingerprint: firefox
-  ws-opts:
-    path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
-- name: '🇩🇪 Germany — #3'
-  type: vless
-  server: 185.86.145.112
-  port: 10452
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
-  udp: true
-  skip-cert-verify: false
-  network: raw
-  tls: true
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: L1Ug_ELbeZ_5q9QRzO5Lg_ZMkus9n72aiUfvFirN9Vo
-    short-id: c8a79c7b64adca2a
-- name: '🇩🇪 Germany — #4'
-  type: vless
   server: 185.86.147.184
   port: 9449
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
   udp: true
   skip-cert-verify: false
   network: raw
@@ -110,25 +83,11 @@ proxies:
   reality-opts:
     public-key: SsPslLCfw2CGDmCs17gTLRSUOsOfv0KgnuLnkyTqCzA
     short-id: 62002c0a685ac208
-- name: '🇩🇪 Germany — #5'
-  type: vless
-  server: 185.86.145.216
-  port: 32944
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
-  udp: true
-  skip-cert-verify: false
-  network: raw
-  tls: true
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
-    short-id: 91d2d3db690f4b59
-- name: '🇩🇪 Germany — #6'
+- name: '🇩🇪 Germany — #3'
   type: vless
   server: 91.185.83.105
   port: 9443
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
   udp: true
   skip-cert-verify: false
   network: raw
@@ -138,11 +97,38 @@ proxies:
   reality-opts:
     public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
     short-id: 91d2d3db690f4b59
-- name: '🇩🇪 Germany — #7'
+- name: '🇩🇪 Germany — #4'
+  type: vless
+  server: 185.86.145.216
+  port: 32944
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
+  udp: true
+  skip-cert-verify: false
+  network: raw
+  tls: true
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Te3ZcFFTilb6_j4hdotSvXaRYBzGuNiRxuBh8n1NezU
+    short-id: 91d2d3db690f4b59
+- name: '🇩🇪 Germany — #5'
+  type: vless
+  server: 95.129.236.149
+  port: 443
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: d.nehtar.ru
+  client-fingerprint: firefox
+  ws-opts:
+    path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
+- name: '🇩🇪 Germany — #6'
   type: vless
   server: 185.86.147.143
   port: 7443
-  uuid: fc7bbbc2-f6e2-4ed7-9f97-f4833cf67663
+  uuid: 183fa407-2280-4804-bcc0-e7deb29c808b
   udp: true
   skip-cert-verify: false
   network: raw
@@ -152,6 +138,21 @@ proxies:
   reality-opts:
     public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
     short-id: 190c27ae5f2e4d2c
+- name: '🇳🇱 The Netherlands — #7'
+  type: vless
+  server: 95.129.236.239
+  port: 443
+  uuid: b4c190fb-e77e-4aff-8545-6067ba70e54d
+  udp: true
+  skip-cert-verify: false
+  network: ws
+  tls: true
+  servername: content-iv1k.login.opendns.stream
+  client-fingerprint: firefox
+  ws-opts:
+    path: /ws/events/961a89255e00
+    headers:
+      Host: content-iv1k.login.opendns.stream
 - name: '🇷🇴 Romania — #8'
   type: vless
   server: 185.178.208.140
@@ -173,7 +174,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #10'
   type: vless
   server: 185.178.208.140
@@ -184,7 +185,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #11'
   type: vless
   server: 185.178.208.140
@@ -206,7 +207,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #13'
   type: vless
   server: 185.178.208.140
@@ -217,7 +218,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #14'
   type: vless
   server: 185.178.208.140
@@ -228,7 +229,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #15'
   type: vless
   server: 185.178.208.140
@@ -250,7 +251,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: '🇷🇴 Romania — #17'
   type: vless
   server: 185.178.208.140
@@ -272,7 +273,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: '🇷🇴 Romania — #19'
   type: vless
   server: 185.178.208.140
@@ -283,7 +284,6 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: ios
 - name: '🇷🇴 Romania — #20'
   type: vless
   server: 185.178.208.140
@@ -294,7 +294,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: safari
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #21'
   type: vless
   server: 185.178.208.140
@@ -305,6 +305,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #22'
   type: vless
   server: 185.178.208.140
@@ -315,7 +316,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #23'
   type: vless
   server: 185.178.208.140
@@ -326,7 +327,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #24'
   type: vless
   server: 185.178.208.140
@@ -337,7 +338,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: firefox
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #25'
   type: vless
   server: 185.178.208.140
@@ -348,7 +349,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #26'
   type: vless
   server: 185.178.208.140
@@ -359,7 +360,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #27'
   type: vless
   server: 185.178.208.140
@@ -370,7 +371,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: '🇷🇴 Romania — #28'
   type: vless
   server: 185.178.208.140
@@ -381,7 +382,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  client-fingerprint: safari
 - name: '🇷🇴 Romania — #29'
   type: vless
   server: 185.178.208.140
@@ -392,7 +393,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: '🇷🇴 Romania — #30'
   type: vless
   server: 185.178.208.140
@@ -403,7 +404,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #31'
   type: vless
   server: 185.178.208.140
@@ -414,6 +415,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #32'
   type: vless
   server: 185.178.208.140
@@ -424,7 +426,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #33'
   type: vless
   server: 185.178.208.140
@@ -435,7 +437,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
 - name: '🇷🇴 Romania — #34'
   type: vless
   server: 185.178.208.140
@@ -445,8 +447,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: edge
+  servername: api.bakarova-top.ru
+  client-fingerprint: chrome
 - name: '🇷🇴 Romania — #35'
   type: vless
   server: 185.178.208.140
@@ -456,8 +458,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: firefox
+  servername: api.bakarova-top.ru
+  client-fingerprint: ios
 - name: '🇷🇴 Romania — #36'
   type: vless
   server: 185.178.208.140
@@ -467,7 +469,7 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
+  servername: api.bakarova-top.ru
   client-fingerprint: safari
 - name: '🇷🇴 Romania — #37'
   type: vless
@@ -478,8 +480,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: api.bakarova-top.ru
-  client-fingerprint: firefox
+  servername: static.bakarova-top.ru
+  client-fingerprint: safari
 - name: '🇷🇴 Romania — #38'
   type: vless
   server: 185.178.208.140
@@ -511,7 +513,7 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: api.bakarova-top.ru
+  servername: static.bakarova-top.ru
   client-fingerprint: ios
 - name: '🇷🇴 Romania — #41'
   type: vless
@@ -522,8 +524,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: api.bakarova-top.ru
-  client-fingerprint: safari
+  servername: static.bakarova-top.ru
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #42'
   type: vless
   server: 185.178.208.140
@@ -533,20 +535,9 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: safari
-- name: '🇷🇴 Romania — #43'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
   servername: api.bakarova-top.ru
-  client-fingerprint: chrome
-- name: '🇷🇴 Romania — #44'
+  client-fingerprint: firefox
+- name: '🇷🇴 Romania — #43'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -557,6 +548,17 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: ios
+- name: '🇷🇴 Romania — #44'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: api.bakarova-top.ru
+  client-fingerprint: safari
 - name: '🇷🇴 Romania — #45'
   type: vless
   server: 185.178.208.140
@@ -567,7 +569,6 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: qq
 - name: '🇷🇴 Romania — #46'
   type: vless
   server: 185.178.208.140
@@ -578,7 +579,7 @@ proxies:
   network: xhttp
   tls: true
   servername: api.bakarova-top.ru
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: '🇷🇴 Romania — #47'
   type: vless
   server: 185.178.208.140
@@ -589,7 +590,7 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: ios
+  client-fingerprint: qq
 - name: '🇷🇴 Romania — #48'
   type: vless
   server: 185.178.208.140
@@ -599,7 +600,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
+  servername: api.bakarova-top.ru
+  client-fingerprint: safari
 - name: '🇷🇴 Romania — #49'
   type: vless
   server: 185.178.208.140
@@ -620,8 +622,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: qq
+  servername: api.bakarova-top.ru
+  client-fingerprint: firefox
 - name: '🇷🇴 Romania — #51'
   type: vless
   server: 185.178.208.140
@@ -631,7 +633,7 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: api.bakarova-top.ru
+  servername: static.bakarova-top.ru
   client-fingerprint: chrome
 - name: '🇷🇴 Romania — #52'
   type: vless
@@ -642,8 +644,8 @@ proxies:
   skip-cert-verify: false
   network: xhttp
   tls: true
-  servername: api.bakarova-top.ru
-  client-fingerprint: firefox
+  servername: static.bakarova-top.ru
+  client-fingerprint: edge
 - name: '🇷🇴 Romania — #53'
   type: vless
   server: 185.178.208.140
@@ -654,30 +656,8 @@ proxies:
   network: xhttp
   tls: true
   servername: static.bakarova-top.ru
-  client-fingerprint: chrome
-- name: '🇷🇴 Romania — #54'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: api.bakarova-top.ru
   client-fingerprint: safari
-- name: '🇷🇴 Romania — #55'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
-  udp: true
-  skip-cert-verify: false
-  network: xhttp
-  tls: true
-  servername: static.bakarova-top.ru
-  client-fingerprint: edge
-- name: '🇷🇴 Romania — #56'
+- name: '🇷🇴 Romania — #54'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -688,7 +668,7 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: ios
-- name: '🇷🇴 Romania — #57'
+- name: '🇺🇸 United States — #55'
   type: vless
   server: 185.178.208.140
   port: 443
@@ -699,6 +679,38 @@ proxies:
   tls: true
   servername: static.bakarova-top.ru
   client-fingerprint: safari
+- name: '🇺🇸 United States — #56'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
+- name: '🇺🇸 United States — #57'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: chrome
+- name: '🇺🇸 United States — #58'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: ea277838-a188-44f1-a2e8-94aa110c4f27
+  udp: true
+  skip-cert-verify: false
+  network: xhttp
+  tls: true
+  servername: static.bakarova-top.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
